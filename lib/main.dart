@@ -114,7 +114,7 @@ class MyHomePageState extends State<MyHomePage> {
         : ("You hit enemy's " + attackingBodyPart!.name.toLowerCase() + ".");
     var secondLine = (defendingBodyPart == whatEnemyAttacks)
         ? "Enemy's attack was blocked."
-        : ("Enemy hit your " + defendingBodyPart!.name.toLowerCase() + ".");
+        : ("Enemy hit your " + whatEnemyAttacks.name.toLowerCase() + ".");
     return firstLine + "\n" + secondLine;
   }
 
